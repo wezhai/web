@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  visibility: hidden;
+  clear: both;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+/* 头部内容 */
+.header {
+  height: 60px;
+  border-bottom: 1px solid #dcdcdc;
+  min-width: 980px;
+}
+/* 头部左边内容 */
+.header-left {
+  width: 300px;
+  height: 60px;
+}
+/* 使用text-indent缩进值为负数，将a标签的内容和span的内容移出到网页之外 */
+.header-left a, .header-left span {
+  display: inline-block;
+  text-indent: -9999px;
+}
+/* 使用背景显示Logo */
+/* 背景图片定位水平移动向右移动为X正轴，垂直移动向下为Y正轴 */
+.header-left a {
+  height: 40px;
+  width: 153px;
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -647px -2px;
+  margin: 10px 0 0 18px;
+}
+
+.header-left span {
+  height: 37px;
+  width: 80px;
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -687px -50px;
+}
+/* 头部右边内容 */
+.header-right {
+  width: 300px;
+  margin: 35px 17px 0 0;
+}
+
+.header-right ul {
+  float: right;
+}
+
+.header-right li {
+  float: left;
+}
+
+.header-right a {
+  margin-right: 3px;
+}
+
+.header-right a, .header-right span {
+  color: #41759f;
+}
+
+/* 下载平台选择菜单 */
+.download-menu {
+  height: 93px;
+  background-color: #fafafa;
+}
+
+.tab-menu {
+  height: 93px;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.tab-menu li{
+  width: 161px;
+  height: 93px;
+  float: left;
+}
+
+.tab-menu li a {
+  display: inline-block;
+  height: 40px;
+  width: 161px;
+  margin-top: 25px;
+  text-indent: -9999px;
+}
+.tab-menu li:nth-of-type(1) a{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: 2px -186px;
+}
+
+.tab-menu li:nth-of-type(1) a:hover{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: 2px -186px;
+}
+
+.tab-menu li:nth-of-type(2) a{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -172px -129px;
+}
+.tab-menu li:nth-of-type(2) a:hover{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -172px -184px;
+}
+
+.tab-menu li:nth-of-type(3) a{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -347px -127px;
+}
+.tab-menu li:nth-of-type(3) a:hover{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -347px -183px;
+}
+
+.tab-menu li:nth-of-type(4) a{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -498px -129px;
+}
+.tab-menu li:nth-of-type(4) a:hover{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -498px -185px;
+}
+
+.tab-menu li:nth-of-type(5) a{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -754px -128px;
+}
+.tab-menu li:nth-of-type(5) a:hover{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -754px -184px;
+}
+
+.tab-menu li:nth-of-type(6) a{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -894px -128px;
+}
+.tab-menu li:nth-of-type(6) a:hover{
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -894px -184px;
+}
+
+/* 下载详情信息 */
+.download-info {
+  height: 440px;
+  background: url(../images/download_bg.png) repeat-x;
+}
+.download-info-content {
+  background: url(../images/guanjia_bg.jpg) no-repeat;
+  height: 440px;
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.download-info-text{
+  position: absolute;
+  top: 200px;
+  left: 623px;
+}
+
+.download-info-text a {
+  display: block;
+  width: 170px;
+  height: 57px;
+  background-color: red;
+  background: url(../images/download-all.gif) no-repeat;
+  background-position: -415px -292px;
+  margin-top: 14px;
+}
+
+.download-info-text p {
+  color: white;
+  line-height: 20px;
+}
+
+.download-info-text span {
+  text-indent: -9999px;
+  display: block;
+}
+/* 下载方式模块 */
+.download-method {
+  height: 195px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.download-method-content {
+  height: 195px;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+
+.download-method-left {
+}
+
+.download-method-left .title, .download-method-right .title{
+  font-size: 20px;
+}
+
+.download-method-left input {
+  height: 30px;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.download-method-left img, .download-method-left button {
+  height: 34px;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.download-method-left .phone {
+  width: 190px;
+  margin-right: 17px;
+}
+.download-method-left .check-code {
+  width: 115px;
+}
+.download-method-left button {
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  background-color: #0cabf7;
+  border: none;
+}
+
+.download-method-left button:hover {
+  background-color: #0098ea;
+  cursor: pointer;
+}
+
+.code-left {
+  width: 160px;
+  margin-right: 35px;
+}
+
+.code-left p:nth-of-type(2) {
+  margin-top: 25px;
+}
+
+.footer {
+  margin-top: 45px;
+}
+
+.footer-content {
+  width: 560px;
+  margin: 0 auto;
+}
+
+.footer-content li {
+  float: left;
+  color: #5f5f5f;
+}
+
+.footer-content a {
+  margin: 0 3px;
+  color: #5f5f5f;
+}
